@@ -33,12 +33,34 @@ function create_table(){
   }, 50);
 }
 
+FlagColored = false
+
+function cancel_color(){
+  let pa = document.getElementsByClassName("htCore")[0].children[2];
+  let len = pa.children.length;
+  for(let i=0;i<len;++i){
+    let row = pa.children[i]
+    let ele = row.children[0]
+    let bgcolor = "#1e1e1e"
+    let clen = row.children.length;
+    ele.classList.add('htDimmed')
+    for(let j=0;j<clen;++j){
+      row.children[j].style.backgroundColor = bgcolor;
+    }
+  }
+}
+
 function color_updater(){
   if(!document.getElementById("coloring").checked){
+    if(FlagColored){
+      FlagColored = false;
+      cancel_color()
+    }
     return
   }
-  let pa = document.getElementsByClassName("htCore")[0].children[2]
-  let len = pa.children.length
+  FlagColored = true;
+  let pa = document.getElementsByClassName("htCore")[0].children[2];
+  let len = pa.children.length;
   for(let i=0;i<len;++i){
     let row = pa.children[i]
     let ele = row.children[0]
