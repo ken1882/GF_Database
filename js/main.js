@@ -26,7 +26,7 @@ function create_table(){
     manualColumnResize: false,    // prevent dragging to resize columns
     manualRowResize: false,       // prevent dragging to resize rows
     comments: false,              // prevent editing of comments
-    columnSorting: true,
+    multiColumnSorting: true,
   };
   window.table = new Handsontable(element, settings);
 }
