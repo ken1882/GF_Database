@@ -1,0 +1,49 @@
+body{
+  background-color: #1e1e1e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  color: #cccccc;
+}
+
+
+a{
+  text-decoration: underline;
+  color: dodgerblue;
+}
+
+img{
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.card{
+  height: 150px;
+  width: auto;
+}
+
+.handsontable .htDimmed {
+  color: #cccccc;
+  background: #1e1e1e
+}
+
+.handsontable th {
+  background-color: #1e1e1e;
+  color: #cccccc;
+  text-align: center;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.handsontable td {
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.center{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
