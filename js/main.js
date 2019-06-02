@@ -134,6 +134,10 @@ function color_updater(){
   }
 }
 
+function clearSortResult(){
+  window.table.getPlugin("multiColumnSorting").sort(undefined);
+}
+
 function start(){
   load_dataset();
 }
